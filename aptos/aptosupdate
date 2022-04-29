@@ -69,7 +69,7 @@ break
 ;;
 
 "Log")
-docker logs -f aptos_fullnode_1 --tail 5000
+docker logs -f aptos-fullnode-1 --tail 5000
 break
 ;;
 
