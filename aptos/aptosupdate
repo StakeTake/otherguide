@@ -22,7 +22,7 @@ case $opt in
 
 # Docker
 
-"Update Aptos")
+"Update")
 echo "============================================================"
 echo "Update Aptos start"
 echo "============================================================"
@@ -68,7 +68,7 @@ sudo docker-compose restart
 break
 ;;
 
-"Log Node")
+"Log")
 docker logs -f aptos_fullnode_1 --tail 5000
 break
 ;;
