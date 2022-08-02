@@ -41,7 +41,6 @@ git checkout --track upstream/devnet
 
 ```
 cp crates/sui-config/data/fullnode-template.yaml /var/sui/fullnode.yaml
-#curl -fLJO https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
 wget -O /var/sui/genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
 sed -i.bak "s/db-path:.*/db-path: \"\/var\/sui\/db\"/ ; s/genesis-file-location:.*/genesis-file-location: \"\/var\/sui\/genesis.blob\"/" /var/sui/fullnode.yaml
 cargo build --release
